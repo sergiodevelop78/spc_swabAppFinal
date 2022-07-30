@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spcswabapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+    <application
+        android:name="com.spcswabapp.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JefronSwabApp"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.spcswabapp.content.new_anexok.AnexoKNuevoActivity"
+            android:exported="false"
+            android:label="AnexoKNuevoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.JefronSwabApp.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.spcswabapp.content.incidences.detail.IncidenceDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.spcswabapp.content.incidences.IncidenceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_incidence"
+            android:theme="@style/Theme.JefronSwabApp.NoActionBar" />
+        <activity
+            android:name="com.spcswabapp.content.splash.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spcswabapp.content.new_order.NewOrderActivity"
+            android:exported="false"
+            android:label="NewOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.JefronSwabApp.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.spcswabapp.content.form_anexoo.NewFormAnexoOActivity"
+            android:exported="false"
+            android:label="NewFormAnexoOActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.JefronSwabApp.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.spcswabapp.content.home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.spcswabapp.content.home2.Home2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.spcswabapp.content.form_anexo_incidencias.FormAnexooIncidenceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.spcswabapp.content.form_anexo_incidencias.detail.FormAnexooIncidenceDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.spcswabapp.content.login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>
